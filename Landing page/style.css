@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+*,
+*::before,
+::after {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 0.94rem;
+  font-family: Poppins, Noto Sans, sans-serif;
+  text-align: center;
+  line-height: 1.5;
+  background: #f8f8f8;
+  background-image: url(pexels-simon-berger-1323550.jpg);
+}
+
+main {
+  padding: 12vh 0;
+}
+
+img[alt="Linktree photo"] {
+  --scale: 164px;
+  width: var(--scale);
+  height: var(--scale);
+  border-radius: 24px;
+}
+
+img[alt="Linktree photo"] + h3 {
+  margin: 16px 0 0px;
+}
+
+.linktree-nav {
+  margin: 40px auto 0;
+  width: 95%;
+  max-width: 700px;
+}
+/* we start  */
+.im{ 
+  width: 50px;
+  height: 50px;
+
+}
+#cl:hover{
+  text-decoration: underline;
+}
+
+.typewriter h2 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /* border-right: .15em solid rgb(0, 0, 0); The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 5.5s steps(40, end),
+    blink-caret .75s 
+    step-end 
+    infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(10, 10, 9); }
+}
+/* navbar name CSS */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.name {
+  font-weight: bold; /* Optional: Make the name bold or add other styles */
+  margin: 0; /* Remove default paragraph margin */
+  overflow: hidden; /* Hide overflow text */
+  white-space: nowrap; /* Prevent line breaks */
+  animation: typewriter 2s steps(20) 1s forwards;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+/* navbar name css END */
+
+
+/* end */
+
+
+.linktree-nav ul {
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+}
+
+.linktree-nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.linktree-box {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  padding: 12px 12px;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.linktree-box .icon-box {
+  --scale: 56px;
+  width: var(--scale);
+  height: var(--scale);
+  font-size: 1.25rem;
+  background: hsl(var(--color), 30%);
+  color: hsl(var(--color));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+
+@media (min-width: 600px) {
+  .linktree-nav ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* nav bar css */
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  font-family: "Raleway";
+  box-sizing: border-box;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  background: linear-gradient(to left, #f46b45, #eea849);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #FFF;
+  height: 50px;
+  padding: 1em;
+}
+.gl {
+  color: rgb(0, 0, 0);
+  
+  text-decoration: none;
+}
+.gl:hover{
+  color: rgb(0, 63, 114);
+  font-size: 22px;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  font-size: 20px;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid black;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background: linear-gradient(to left, #f46b45, #eea849);
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}
+
+/* navbar name hover and effect  */
+.name {
+  color: rgb(0, 0, 0);
+  
+  text-decoration: none;
+}
+.name:hover{
+  color: rgb(0, 63, 114);
+  font-size: 22px;
+}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #f7f8f9;
+  color: #45505b;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #0563bb;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #0678e3;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .copyright {
+  margin: 0 0 5px 0;
+}
+
+#footer .credits {
+  font-size: 13px;
+}

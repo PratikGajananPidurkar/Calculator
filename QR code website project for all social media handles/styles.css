@@ -1,0 +1,86 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.qr-codes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.qr-code {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.qr-code:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.qr-code img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .qr-code {
+        margin: 10px;
+    }
+}
+
+/* styles.css */
+
+/* Add this new CSS */
+.qr-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Update the existing .qr-code CSS */
+.qr-code {
+    flex: 0 0 calc(33.33% - 20px);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+/* Add a media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .qr-code {
+        flex-basis: calc(50% - 20px);
+    }
+}
+

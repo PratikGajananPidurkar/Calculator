@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+}
+
+.tricolor-header {
+    background: linear-gradient(to right, #ff9933 33.3%, #ffffff 33.3%, #ffffff 66.6%, #138808 66.6%);
+    color: black;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.flag img {
+    width: 60%;
+    margin-top: 20px;
+}
+
+.countdown-container {
+    margin-top: 20px;
+}
+
+#countdown {
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.message {
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: #008000;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+footer p a {
+    color: inherit; /* Inherits the color of the parent element */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+
+/*flag.img size settings */
+
+.flag img {
+    width: 650px; /* Set the desired width */
+    height: auto; /* Height adjusts automatically to maintain aspect ratio */
+}
+
+
+/* Social media Icons */
+
+header {
+    position: relative;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Aligns the social icons to the right */
+    position: absolute;
+    top: 10px; /* Adjust based on your header's padding */
+    right: 20px; /* Adjust based on your header's padding */
+}
+ 
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* Increased gap between icons */
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons li a {
+    text-decoration: none;
+    color: black;
+    font-size: 10em; /* Increased size of icons */
+}
+
+.social-icons li a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+h1 {
+    text-align: center; /* Center the header text */
+    margin: 0;
+}
+
+
+/* Background img for web */
+
+body {
+    background-image: url('istockphoto-1326095372-612x612.jpg');
+    background-size: cover; /* Makes sure the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
